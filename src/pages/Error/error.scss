@@ -1,0 +1,33 @@
+.errorContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 65vh;
+    background-color: #fff;
+
+    &__Number {
+        font-size: 12rem;
+        font-weight: bold;
+        color: #ff6060;
+        margin: 0;
+    }
+
+    &__Text {
+        font-size: 1.5rem;
+        color: #ff6060;
+        margin: 0.5rem 0;
+    }
+
+    &__Link {
+        font-size: 1rem;
+        color: black;
+        text-decoration: none;
+        margin-top: 2rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

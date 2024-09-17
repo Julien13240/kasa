@@ -1,0 +1,129 @@
+.middleBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 769px) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .middleLeftBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+
+
+        h1 {
+            color: #FF6060;
+        }
+
+
+        @media screen and (max-width: 769px) {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+
+            p {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .tags {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 10px;
+        }
+
+        .tag {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            background-color: #FF6060;
+            color: white;
+            padding: 0 5px;
+            min-width: 115px;
+            height: 25px;
+
+            @media screen and (min-width: 769px) {
+                width: 84px;
+                height: 18px;
+                border-radius: 10px;
+            }
+        }
+    }
+}
+
+.middleRightBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: #FF6060;
+
+    @media screen and (max-width: 769px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        .stars {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-right: auto;
+            /* Aligne les étoiles à gauche */
+        }
+
+        .hostNameAndPicture {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-left: auto;
+            /* Aligne le nom et l'image à droite */
+        }
+    }
+
+    .hostNameAndPicture {
+        display: flex;
+        align-items: center;
+
+        .hostName {
+            margin-right: 6px;
+            /* Espace de 6px entre le nom et l'image */
+        }
+
+        img:not(.star) {
+            border-radius: 50px;
+            /* Toujours un border-radius de 50px pour l'image de l'hôte */
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+img.star {
+    width: 18px;
+    height: 18px;
+}
+
+.backBlock {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+    }
+}

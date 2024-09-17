@@ -1,0 +1,26 @@
+.home_gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 30px;
+    background: #f7f7f7;
+    padding: 50px;
+    border-radius: 25px;
+    margin-bottom: 40px;
+
+    .logement {
+        width: 30%;
+    }
+
+    @media screen and (max-width: 769px) {
+        flex-direction: column;
+        background: none;
+        padding: 0;
+
+        .logement {
+            width: 100%;
+        }
+
+    }
+}

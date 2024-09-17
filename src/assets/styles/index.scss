@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/static/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/static/Montserrat-ExtraBold.ttf") format("truetype");
+  font-weight: 900
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+
+}
+
+main {
+  @media screen and (max-width: 768px) {
+    padding: 0 20px;
+
+  }
+}
+
+.layout-wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+h1 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 51.34px;
+  margin-bottom: 0;
+}
+
+p {
+  margin-top: 0;
+}

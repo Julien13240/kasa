@@ -1,0 +1,39 @@
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 57px;
+
+    @media screen and (min-width: 769px) {
+        .nav-header {
+            text-transform: none;
+            gap: 26px;
+
+        }
+    }
+
+
+
+    &__nav-link-home,
+    &__nav-link-about {
+
+        color: #000;
+        font-weight: 500;
+        line-height: 34.22px;
+        text-align: right;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Monserrat", sans-serif;
+        font-size: 12px;
+
+        @media screen and (min-width: 769px) {
+            font-size: 24px;
+            text-transform: none;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration-line: underline;
+        }
+    }
+}

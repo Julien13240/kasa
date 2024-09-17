@@ -1,0 +1,87 @@
+.expansionPanel {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100%;
+
+
+}
+
+.expansionPanel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    background-color: #FF6060;
+    color: white;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+
+
+}
+
+.expansionPanel-header h3 {
+    margin: 0;
+
+}
+
+.expansionPanel-header .arrow {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+    border-radius: 2px;
+
+}
+
+.expansionPanel-header .arrow.open {
+    transform: rotate(225deg);
+
+}
+
+.expansionPanel-content {
+    padding: 15px;
+    border: 1px solid #F6F6F673;
+    border-top: none;
+    background-color: #F6F6F673;
+    animation: slideDown 0.3s ease;
+
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 500px;
+
+        opacity: 1;
+    }
+}
+
+.leftExpansionPanel {
+    flex: 1;
+    margin-right: 20px;
+
+    @media screen and (max-width: 768px) {
+        margin-right: 0;
+
+    }
+}
+
+
+.rightExpansionPanel {
+    flex: 1;
+    margin-right: 20px;
+
+
+}
+
+.rightExpansionPanel {
+    margin-right: 0;
+}
