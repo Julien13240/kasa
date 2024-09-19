@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+
 import leftArrow from "../../assets/images/leftArrow.png"
 import rightArrow from "../../assets/images/rightArrow.png"
-import "./carrousel.scss"; 
+
+import "./carrousel.scss";
 
 const Carousel = ({ pictures }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -18,9 +20,9 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <button className="carousel-button prev-button" onClick={prevImage}><img src={ leftArrow } alt="" /></button>
+      <button className="carousel-button prev-button" onClick={prevImage}><img src={leftArrow} alt="" /></button>
       <img className="carousel-image" src={pictures[currentImageIndex]} alt={`logement image ${currentImageIndex + 1}`} />
-      <button className="carousel-button next-button" onClick={nextImage}><img src={ rightArrow } alt="" /></button>
+      <button className="carousel-button next-button" onClick={nextImage}><img src={rightArrow} alt="" /></button>
     </div>
   );
 };

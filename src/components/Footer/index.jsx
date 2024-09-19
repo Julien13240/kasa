@@ -1,6 +1,10 @@
 import React from 'react';
+
 import logo from "../../assets/logo/logo_footer.png"
+
 import "./footer.scss"
+
+
 const Footer = () => {
   return (
     <div className='container'>

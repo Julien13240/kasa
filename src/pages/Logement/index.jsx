@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
+
 import StarRating from '../../components/StarRating';
 import DataLogement from "../../datas/logement.json";
 import Carousel from "../../components/Carrousel";

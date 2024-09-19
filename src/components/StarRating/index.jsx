@@ -1,8 +1,9 @@
 import React from 'react';
-import './starRating.scss';
+
 import fullStar from '../../assets/images/fullStar.png';
 import emptyStar from '../../assets/images/emptyStar.png';
 
+import './starRating.scss';
 
 const StarRating = ({ rating }) => {
   const maxStars = 5;

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import "./panel.scss";
 
 const ExpansionPanel = ({ title, content }) => {
@@ -12,7 +13,7 @@ const ExpansionPanel = ({ title, content }) => {
     <div className="expansionPanel">
       <div className="expansionPanel-header" onClick={toggleExpansionPanel}>
         <h3>{title}</h3>
-        
+
         <span className={`arrow ${isOpen ? "" : "open"}`}></span>
       </div>
       {isOpen && (

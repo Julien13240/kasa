@@ -51,9 +51,10 @@
             border-radius: 10px;
             background-color: #FF6060;
             color: white;
-            padding: 0 5px;
+            padding: 3px 5px;
             min-width: 115px;
             height: 25px;
+
 
             @media screen and (min-width: 769px) {
                 width: 84px;
@@ -77,6 +78,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        margin-top: 15px;
 
         .stars {
             display: flex;

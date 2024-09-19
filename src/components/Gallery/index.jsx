@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import logement from "../../datas/logement.json";
 import Card from "../Cards";
+
 import "./gallery.scss"
 
 const Gallery = () => {
