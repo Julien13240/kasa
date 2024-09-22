@@ -7,7 +7,7 @@
     @media screen and (max-width: 769px) {
         display: flex;
         flex-direction: column;
-        margin-block-start: -30px;
+        margin-block-start: -15px;
     }
 
     .middleLeftBlock {
@@ -31,9 +31,20 @@
             line-height: 20px;
 
             p {
+
+                font-size: 14px;
                 font-weight: 500;
+                line-height: 19.96px;
+                text-align: left;
+                
+            }
+            h1{
+            
                 font-size: 18px;
-                line-height: 25px;
+                font-weight: 500;
+                line-height: 25.67px;
+                text-align: left;
+
             }
         }
 
@@ -54,7 +65,7 @@
             color: white;
             padding: 3px 5px;
             min-width: 115px;
-            height: 25px;
+            
 
 
             @media screen and (min-width: 769px) {
