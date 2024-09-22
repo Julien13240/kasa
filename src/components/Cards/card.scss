@@ -7,7 +7,10 @@
     animation: fadeInUp 600ms ease-in-out;
     overflow: hidden;
 
-    @media screen and (max-width: 375px) {}
+    @media screen and (max-width: 375px) {
+        height: 255px;
+        margin-bottom: 0;
+    }
 
     .card-img {
         width: inherit;

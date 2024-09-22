@@ -10,7 +10,8 @@ import "./logement.scss";
 
 const PageDataLogement = () => {
   const { rentID } = useParams(); // On récupère l'ID du logemnent depuis les paramètres d'URL /logement/{rentID}
-  const myRent = DataLogement.find(logement => logement.id === rentID);
+  const myRent = DataLogement.find(logement => logement.id === rentID); // Ne pas utiliser les accolades est un raccourci permettant 
+  // de ne pas utiliser return ( puisqu'il n'y a qu'un seul parametre d'input)
 
   if (!myRent) {
     return <Navigate to="../Error" />;

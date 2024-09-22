@@ -7,6 +7,7 @@
     @media screen and (max-width: 769px) {
         display: flex;
         flex-direction: column;
+        margin-block-start: -30px;
     }
 
     .middleLeftBlock {
@@ -100,6 +101,7 @@
     .hostNameAndPicture {
         display: flex;
         align-items: center;
+        margin-bottom: 10px;
 
         .hostName {
             margin-right: 6px;

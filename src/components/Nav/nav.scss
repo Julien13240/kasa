@@ -4,13 +4,7 @@
     justify-content: flex-end;
     gap: 57px;
 
-    @media screen and (min-width: 769px) {
-        .nav-header {
-            text-transform: none;
-            gap: 26px;
-
-        }
-    }
+   
 
 
 
@@ -35,5 +29,12 @@
         &:focus {
             text-decoration-line: underline;
         }
+    }
+}
+@media screen and (max-width: 769px) {
+    .nav-header {
+        text-transform: none;
+        gap: 26px;
+
     }
 }
